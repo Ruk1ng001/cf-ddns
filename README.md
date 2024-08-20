@@ -79,6 +79,10 @@ GOOS=darwin GOARCH=amd64 go build -o dist/cf-ddns-darwin-amd64
 GOOS=windows GOARCH=amd64 go build -o dist/cf-ddns-windows-amd64.exe
 '''
 
+## changeLog
+
+`v0.0.1` 初始版本
+
 ## 如何贡献
 
 欢迎贡献代码和提出意见！请先 fork 本项目，创建一个新的分支进行开发，然后提交 Pull Request。
