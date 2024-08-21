@@ -22,7 +22,7 @@
 
 在使用前，你需要创建一个配置文件 `config.json`，示例如下：
 
-'''json
+```json
 {
 "api_token": "your_cloudflare_api_token",
 "zone_id": "your_cloudflare_zone_id",
@@ -30,15 +30,15 @@
 "domain": "yourdomain.com",
 "check_interval": 10
 }
-'''
+```
 
 ### 3. 运行工具
 
 将配置文件放置在与可执行文件相同的目录下，然后运行：
 
-'''bash
+```bash
 ./cf-ddns -config config.json
-'''
+```
 
 ## 配合 Cron 运行
 
@@ -46,26 +46,26 @@
 
 1. 编辑 Crontab 文件：
 
-'''bash
+```bash
 crontab -e
-'''
+```
 
 2. 添加如下内容，将路径替换为你可执行文件的实际路径：
 
-'''bash
+```bash
 */10 * * * * /path/to/cf-ddns/cf-ddns.sh >> /var/log/cf-ddns.log 2>&1
-'''
+```
 
 这行命令表示每 10 分钟运行一次工具，并将输出日志保存到 `/var/log/cf-ddns.log` 文件中。
 
 3. 修改`cf-ddns.sh`脚本：
 
-'''bash
+```bash
 API_TOKEN="your_api_token"
 ZONE_ID="your_zone_id"
 RECORD_ID="your_record_id"
 DOMAIN="your.domain.com"
-'''
+```
 
 ## 构建与发布
 
@@ -73,11 +73,11 @@ DOMAIN="your.domain.com"
 
 如果你希望自行构建，确保你已安装 Go 环境，然后运行以下命令以构建不同平台的二进制文件：
 
-'''bash
+```bash
 GOOS=linux GOARCH=amd64 go build -o dist/cf-ddns-linux-amd64
 GOOS=darwin GOARCH=amd64 go build -o dist/cf-ddns-darwin-amd64
 GOOS=windows GOARCH=amd64 go build -o dist/cf-ddns-windows-amd64.exe
-'''
+```
 
 ## changeLog
 
