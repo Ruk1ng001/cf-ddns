@@ -1,3 +1,5 @@
+[<img src="https://api.gitsponsors.com/api/badge/img?id=844919251" height="90">](https://api.gitsponsors.com/api/badge/link?p=Er/PiwxJk+inXTjn21TD7fh/yo5/yqHGsttmEVUCY0cDqCWwvsQhM2X1UN667Jq358rlwN8tNHoqUI4MjGzTvAgRTt38o6f+umDfIstzh1h5/hHyQvBbSuwinon2qu4AOPVgf5AMTsduo9t8wj4Dpg==)
+
 # 动态 DNS 更新工具
 
 > 一个使用 Go 编写的自动化动态 DNS 更新工具，支持多平台编译和发布。
